@@ -7,6 +7,9 @@ defmodule Whysologgy.Application do
 
   @impl true
   def start(_type, _args) do
+    IO.inspect(Logger.level(), label: "Logger global level (application)")
+    Logger.metadata() |> IO.inspect(label: "Logger metadata (application)")
+
     children = [
       # Start the Ecto repository
       Whysologgy.Repo
