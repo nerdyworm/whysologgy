@@ -28,6 +28,7 @@ defmodule Whysologgy.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:exqlite, path: "./vendor/exqlite/", override: true},
       {:ecto_sql, "~> 3.10"},
       {:ecto_sqlite3, "~> 0.19.0"}
     ]
