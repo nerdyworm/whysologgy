@@ -11,3 +11,4 @@ config :logger, :default_formatter, format: "[$level] $message\n"
 config :logger, level: :info
 config :logger, truncate: :infinity
 config :logger, :console, truncate: :infinity
+config :logger, :default_handler, level: :info
