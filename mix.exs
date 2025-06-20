@@ -15,6 +15,8 @@ defmodule Whysologgy.MixProject do
 
   # Run "mix help compile.app" to learn about applications.
   def application do
+    :logger.set_primary_config(:level, :error)
+
     [
       extra_applications: [:logger],
       mod: {Whysologgy.Application, []}
